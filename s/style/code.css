@@ -76,3 +76,23 @@ code .cp {
 code .cv {
   color: #ae81ff;
 }
+
+/* js keyword, key method */
+.kd, .k {
+  color: #66d9ef;
+}
+
+/* js key/selector */
+.nx {
+  color: #a6e22e;
+}
+
+/* js parameter */
+.px {
+  color: #e6db74;
+}
+
+/* js operator */
+.o {
+  color: #f92672;
+}
