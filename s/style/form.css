@@ -13,9 +13,18 @@ input, button {
   overflow: visible;
 }
 
+button, input, optgroup, select, textarea {
+  margin: 0;
+}
+
+label {
+  display: block;
+}
+
 /* checkboxes and radio buttons */
 [type="checkbox"], [type="radio"] {
   padding: 0;
+  opacity: 0;
 }
 
 [type="checkbox"] + label, [type="radio"] + label {
