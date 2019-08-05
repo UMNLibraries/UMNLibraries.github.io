@@ -2,6 +2,7 @@ fieldset {
   padding: 0 1rem 1rem;
   border: 2px solid var(--col-bg-medium);
   position: relative;
+  margin-bottom: var(--m-norm);
 }
 
 fieldset > legend {
@@ -42,7 +43,7 @@ input[aria-invalid='false'], textarea[aria-invalid='false'] {
   padding: 0 3rem 0 2rem;
 }
 
-[disabled] + label {
+input[disabled] + label::before {
   border: 0;
 }
 
@@ -102,7 +103,7 @@ input[aria-invalid='false'], textarea[aria-invalid='false'] {
 }
 
 /* textareas and text inputs */
-[type='text'], textarea {
+[type='text'], [type='search'], textarea {
   width: 100%;
   max-width: 100%;
   padding: 0.75rem;
@@ -116,6 +117,12 @@ input[aria-invalid='false'], textarea[aria-invalid='false'] {
 textarea {
   min-height: 8rem;
   overflow: auto;
+}
+
+/* select */
+select {
+  font-size: 1rem;
+  background: var(--col-bg-medium);
 }
 
 /* form buttons */
@@ -132,7 +139,6 @@ textarea {
   font-size: 1rem;
   min-height: 48px;
   position: relative;
-  margin: 0.5rem 0;
   min-height: inherit;
 }
 
