@@ -160,7 +160,7 @@ select:hover {
 
 select:focus {
 	border-color: var(--col-bg-med-dark);
-	box-shadow: 0 0 1px 8px var(--col-primary);
+	box-shadow: 0 0 0.5rem var(--col-text);
 	box-shadow: 0 0 0 3px -moz-mac-focusring;
 	outline: none;
 }

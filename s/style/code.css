@@ -12,7 +12,7 @@ pre.code {
   overflow: auto;
   text-shadow: none;
   white-space: pre-wrap;
-  margin-bottom: calc( var(--m-norm) * 1rem);
+  margin: 0 0 calc( var(--m-norm) * 1rem);
   position: relative;
 }
 
@@ -21,7 +21,7 @@ pre.code code {
 }
 
 pre[rel]::before {
-  color: #4caf50;
+  color: var(--col-mes-success-dark);
   font-weight: 700;
   font-size: 0.9rem;
   content: attr(rel);
