@@ -203,6 +203,7 @@ select + input[type="search"] {
   height: 1px;
   white-space: nowrap;
 }
+
 .toggle[type="checkbox"] + label {
   display: block;
   position: relative;
@@ -210,6 +211,7 @@ select + input[type="search"] {
   padding-left: 4rem;
   max-width: calc(100% - 2rem);
 }
+
 .toggle[type="checkbox"] + label::before,
 .toggle[type="checkbox"] + label::after {
   content: "";
@@ -217,6 +219,7 @@ select + input[type="search"] {
   height: 1.5rem;
   transition: all 0.25s ease;
 }
+
 .toggle[type="checkbox"] + label::before {
   left: 0;
   top: 0.25rem;
@@ -225,6 +228,7 @@ select + input[type="search"] {
   background: var(--col-bg-med-dark);
   border-radius: 1.1rem;
 }
+
 .toggle[type="checkbox"] + label::after {
   left: 0;
   top: 0.25rem;
@@ -234,6 +238,12 @@ select + input[type="search"] {
   width: 1.5rem;
   border: 0.15rem solid var(--col-bg-med-dark);
 }
+
+.toggle[type="checkbox"]:checked + label::before {
+  border-color: var(--col-mes-success-bg);
+  color: var(--col-mes-success-bg);
+}
+
 .toggle[type="checkbox"]:checked + label::after {
   left: 1.6rem;
   border-color: var(--col-mes-success-bg);
@@ -244,6 +254,7 @@ select + input[type="search"] {
 .toggle[type="checkbox"]:hover + label::before {
   box-shadow: 0 0 0.5rem var(--col-text);
 }
+
 .toggle[type="checkbox"]:focus + label::after,
 .toggle[type="checkbox"]:hover + label::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='50' fill='rgba(0,0,0,.25)'/%3E%3C/svg%3E");
@@ -256,15 +267,19 @@ select + input[type="search"] {
   background-color: transparent;
   border-color: var(--col-bg-medium);
 }
+
 .toggle[type="checkbox"][disabled] + label::after {
   border-color: var(--col-bg-medium);
 }
+
 .toggle[disabled]:hover + label {
   color: var(--col-bg-medium);
 }
+
 .toggle[type="checkbox"][disabled]:hover + label::before {
   box-shadow: none;
 }
+
 .toggle[type="checkbox"][disabled]:hover + label::after {
   background-image: none;
 }
@@ -272,6 +287,7 @@ select + input[type="search"] {
 .toggle[type="checkbox"]:indeterminate + label::after {
   left: 0.8rem;
 }
+
 .toggle[type="checkbox"]:indeterminate + label::before {
   background-color: var(--col-bg-medium);
 }
@@ -282,10 +298,12 @@ select + input[type="search"] {
   left: auto;
   right: 0;
 }
+
 .toggle.flip[type="checkbox"] + label::after {
   left: auto;
   right: 1.6rem;
 }
+
 .toggle.flip[type="checkbox"]:checked + label::after {
   right: 0;
 }
@@ -293,6 +311,7 @@ select + input[type="search"] {
 .toggle.flip[type="checkbox"]:indeterminate + label::after {
   right: 0.8rem;
 }
+
 .toggle.flip[type="checkbox"] + label {
   padding-left: 0;
   padding-right: 4rem;
@@ -304,9 +323,11 @@ select + input[type="search"] {
     outline: 1px dotted windowText;
     outline-offset: 0.25rem;
   }
+
   .toggle[type="checkbox"] + label::after {
     background-color: windowText;
   }
+  
   .toggle[type="checkbox"][disabled] + label::after {
     background-color: transparent;
   }
