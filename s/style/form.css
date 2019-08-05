@@ -2,7 +2,7 @@ fieldset {
   padding: 0 1rem 1rem;
   border: 2px solid var(--col-bg-medium);
   position: relative;
-  margin-bottom: var(--m-norm);
+  margin-bottom: calc(var(--m-norm) * 1rem);
 }
 
 fieldset > legend {
@@ -41,6 +41,7 @@ input[aria-invalid='false'], textarea[aria-invalid='false'] {
 [type="checkbox"] + label, [type="radio"] + label {
   position: relative;
   padding: 0 3rem 0 2rem;
+  font-weight: normal;
 }
 
 input[disabled] + label::before {
@@ -161,7 +162,7 @@ select {
   border-radius: 4px;
   flex: 1 1 auto;
   width: 1%;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .search > *:first-child) {
@@ -177,4 +178,12 @@ select {
 .search > *:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.search input[type="search"] {
+  flex-grow: 2;
+}
+
+select + input[type="search"] {
+  margin-right: -4px;
 }
