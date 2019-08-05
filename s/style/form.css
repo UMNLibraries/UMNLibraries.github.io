@@ -23,6 +23,11 @@ label {
   font-weight: bold;
 }
 
+.input:focus + label,
+.input:hover + label {
+  color: var(--col-link);
+}
+
 /* invalid, error, other feedback styles */
 input[aria-invalid='true'], textarea[aria-invalid='true'] {
   border-color: var(--col-mes-danger-dark);
@@ -201,47 +206,43 @@ select + input[type="search"] {
 .toggle[type="checkbox"] + label {
   display: block;
   position: relative;
-  padding: 0.5em;
-  padding-left: 4em;
-  max-width: calc(100% - 2em);
+  padding: 0.5rem;
+  padding-left: 4rem;
+  max-width: calc(100% - 2rem);
 }
 .toggle[type="checkbox"] + label::before,
 .toggle[type="checkbox"] + label::after {
   content: "";
   position: absolute;
-  height: 1.5em;
+  height: 1.5rem;
   transition: all 0.25s ease;
 }
 .toggle[type="checkbox"] + label::before {
   left: 0;
-  top: 0.2em;
-  width: 3em;
-  border: 0.2em solid #767676;
-  background: #767676;
-  border-radius: 1.1em;
+  top: 0.25rem;
+  width: 3rem;
+  border: 0.2rem solid var(--col-bg-med-dark);
+  background: var(--col-bg-med-dark);
+  border-radius: 1.1rem;
 }
 .toggle[type="checkbox"] + label::after {
   left: 0;
-  top: 0.25em;
+  top: 0.25rem;
   background-color: #fff;
   background-position: center center;
   border-radius: 50%;
-  width: 1.5em;
-  border: 0.15em solid #767676;
+  width: 1.5rem;
+  border: 0.15rem solid var(--col-bg-med-dark);
 }
 .toggle[type="checkbox"]:checked + label::after {
-  left: 1.6em;
-  border-color: #36a829;
-  color: #36a829;
+  left: 1.6rem;
+  border-color: var(--col-mes-success-bg);
+  color: var(--col-mes-success-bg);
 }
 
-.toggle[type="checkbox"]:focus + label,
-.toggle[type="checkbox"]:hover + label {
-  color: #00f;
-}
 .toggle[type="checkbox"]:focus + label::before,
 .toggle[type="checkbox"]:hover + label::before {
-  box-shadow: 0 0 0.5em #333;
+  box-shadow: 0 0 0.5rem var(--col-text);
 }
 .toggle[type="checkbox"]:focus + label::after,
 .toggle[type="checkbox"]:hover + label::after {
@@ -253,13 +254,13 @@ select + input[type="search"] {
 
 .toggle[type="checkbox"][disabled] + label::before {
   background-color: transparent;
-  border-color: #ddd;
+  border-color: var(--col-bg-medium);
 }
 .toggle[type="checkbox"][disabled] + label::after {
-  border-color: #ddd;
+  border-color: var(--col-bg-medium);
 }
 .toggle[disabled]:hover + label {
-  color: #999; /* case for CSS custom property if not supporting IE/Edge */
+  color: var(--col-bg-medium);
 }
 .toggle[type="checkbox"][disabled]:hover + label::before {
   box-shadow: none;
@@ -269,10 +270,10 @@ select + input[type="search"] {
 }
 
 .toggle[type="checkbox"]:indeterminate + label::after {
-  left: 0.8em;
+  left: 0.8rem;
 }
 .toggle[type="checkbox"]:indeterminate + label::before {
-  background-color: #ddd;
+  background-color: var(--col-bg-medium);
 }
 
 /* if text goes before toggle */
@@ -283,25 +284,25 @@ select + input[type="search"] {
 }
 .toggle.flip[type="checkbox"] + label::after {
   left: auto;
-  right: 1.6em;
+  right: 1.6rem;
 }
 .toggle.flip[type="checkbox"]:checked + label::after {
   right: 0;
 }
 
 .toggle.flip[type="checkbox"]:indeterminate + label::after {
-  right: 0.8em;
+  right: 0.8rem;
 }
 .toggle.flip[type="checkbox"] + label {
   padding-left: 0;
-  padding-right: 4em;
+  padding-right: 4rem;
 }
 
 @media screen and (-ms-high-contrast: active) {
   .toggle[type="checkbox"]:focus + label::before,
   .toggle[type="checkbox"]:hover + label::before {
     outline: 1px dotted windowText;
-    outline-offset: 0.25em;
+    outline-offset: 0.25rem;
   }
   .toggle[type="checkbox"] + label::after {
     background-color: windowText;
