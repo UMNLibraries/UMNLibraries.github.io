@@ -493,16 +493,6 @@
       </article>
 
       <article>
-        <h3>Checkboxes and radio buttons</h3>
-        <p>The <code>&lt;fieldset&gt;</code> surrounds the entire grouping of checkboxes or radio buttons. The <code>&lt;legend&gt;</code> provides a description for the grouping.</p>
-
-        <p>Some assistive technology reads the legend text for reach fieldset, so it should be brief and descriptive. This helps someone using assistive technology to understand the question they are answering with the group of checkboxes.</p>
-
-        <p>Adapted from <a href="https://a11y-style-guide.com/style-guide/section-forms.html" aria-describedby="ext-site">A11y Style Guide</a>.</p>
-
-      </article>
-
-      <article>
         <h3>Auto-complete and auto-suggest HTML features</h3>
         <p>Use autocomplete smartly. Include on every input, even with a basic <code>"on"</code> or <code>"off"</code> value.</p>
 
@@ -583,9 +573,14 @@
     <section>
       <h2>Form patterns</h2>
       <article>
-        <h3>Checkboxes</h3>
-        <p>Adapted from <a href="https://www.a11ywithlindsey.com/blog/create-custom-keyboard-accesible-checkboxes" class="ext-site">create custom keyboard accessible checkboxes</a>, <a href="https://scottaohara.github.io/a11y_styled_form_controls/src/checkbox/" aria-describedby="ext-site">styled HTML checkboxes</a>.</p>
+        <h3>Checkboxes and radio buttons</h3>
+        <p>The <code>&lt;fieldset&gt;</code> surrounds the entire grouping of checkboxes or radio buttons. The <code>&lt;legend&gt;</code> provides a description for the grouping.</p>
 
+        <p>Some assistive technology reads the legend text for reach fieldset, so it should be brief and descriptive. This helps someone using assistive technology to understand the question they are answering with the group of checkboxes.</p>
+
+        <p>Adapted from <a href="https://a11y-style-guide.com/style-guide/section-forms.html" aria-describedby="ext-site">A11y Style Guide</a>,  <a href="https://www.a11ywithlindsey.com/blog/create-custom-keyboard-accesible-checkboxes" class="ext-site">create custom keyboard accessible checkboxes</a>, and <a href="https://www.a11ywithlindsey.com/blog/create-custom-keyboard-accessible-radio-buttons/" aria-describedby="ext-site">create custom keyboard accessible radio buttons</a>.</p>
+
+        <h4>Checkboxes</h4>
         <fieldset>
           <legend>What services do you use?</legend>
 
@@ -601,13 +596,8 @@
           <input type="checkbox" name="services" id="cb4" />
           <label for="cb4">Makerspaces</label>
         </fieldset>
-      </article>
 
-      <article>
-        <h3>Radio buttons</h3>
-        <p>Adapted from <a href="https://www.a11ywithlindsey.com/blog/create-custom-keyboard-accessible-radio-buttons/" aria-describedby="ext-site">create custom keyboard accessible radio buttons</a>.</p>
-        <p>Radio buttons are grouped together using a <code>fieldset</code>.</p>
-
+        <h4>Radio buttons</h4>
         <fieldset>
           <legend>Does your request include items that may have a copyright fee?</legend>
             <input type="radio" name="copyright" id="copy-yes" />
@@ -619,7 +609,7 @@
             <input type="radio" name="copyright" id="copy-maybe" />
             <label for="copy-maybe">I don&rsquo;t know</label>
         </fieldset>
-      </article>
+
 
       <article>
         <h3>Text inputs</h3>
@@ -629,6 +619,29 @@
 
         <label for="textdesc">Description</label>
         <textarea id="textdesc" name="description"></textarea>
+
+        <h4>Feedback</h4>
+        <p>See also <a href="/code/alert.html">alerts</a>.</p>
+        <h5>Errors</h5>
+        <label for="textname" aria-invalid="true">Name</label>
+        <input name="name" id="textname" type="text" />
+
+        <h5>Success</h5>
+
+
+      </article>
+
+      <article>
+        <h3>Search</h3>
+        <form class="search" role="Search" aria-label="Primary search">
+          <select name="site-search">
+            <option value="primo">Libraries search</option>
+            <option value="gcse">Website-only search</option>
+            <option value="worldcat">Worldcat</option>
+          </select>
+          <input type="search" />
+          <button type="submit">Search</button>
+        </form>
       </article>
 
       <article>

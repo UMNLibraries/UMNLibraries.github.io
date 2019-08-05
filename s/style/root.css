@@ -30,6 +30,23 @@
   --col-bg-medium: #f0efee;
   --col-bg-med-dark: #8a8a8a;
 
+/* colors for messages */
+  --col-mes-info-bg: #edf1f6;
+  --col-mes-info-dark: #006298;
+  --col-mes-info-text: #134a71;
+
+  --col-mes-success-bg: #eaf3e8;
+  --col-mes-success-dark: #008a28;
+  --col-mes-success-text: #16521d;
+
+  --col-mes-warn-bg: #ffeecd;
+  --col-mes-warn-dark: #f5bb17;
+  --col-mes-warn-text: #584416;
+
+  --col-mes-danger-bg: #ffece5;
+  --col-mes-danger-dark: #df3603;
+  --col-mes-danger-text: #82270d;
+
   /* spacing - bottom oriented */
   --m-norm: 2;
   --m-min: 1;

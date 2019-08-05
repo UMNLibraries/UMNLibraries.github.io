@@ -19,6 +19,16 @@ button, input, optgroup, select, textarea {
 
 label {
   display: block;
+  font-weight: bold;
+}
+
+/* invalid, error, other feedback styles */
+input[aria-invalid='true'], textarea[aria-invalid='true'] {
+  border-color: var(--col-mes-danger-dark);
+}
+
+input[aria-invalid='false'], textarea[aria-invalid='false'] {
+  border-color: var(--col-mes-success-dark);
 }
 
 /* checkboxes and radio buttons */
@@ -32,6 +42,10 @@ label {
   padding: 0 3rem 0 2rem;
 }
 
+[disabled] + label {
+  border: 0;
+}
+
 [type="checkbox"] + label::before, [type="radio"] + label::before {
   height: 22px;
   width: 22px;
@@ -39,6 +53,10 @@ label {
   top: 1px;
   background: var(--col-bg-medium);
   border: 1px solid var(--col-bg-med-dark);
+}
+
+[type="radio"] + label::before {
+  border-radius: 50%;
 }
 
 [type="checkbox"] + label::before,
@@ -90,7 +108,7 @@ label {
   padding: 0.75rem;
   margin: 8px -2px 20px;
   border-radius: 4px;
-  border: 2px solid #f4f4f4;
+  border: 1px solid var(--col-bg-med-dark);
   font-size: 1rem;
   min-height: 49px;
 }
@@ -122,4 +140,35 @@ textarea {
 [role="button"]:focus, [role="button"]:active {
   background-color: var(--col-primary-dark);
   text-decoration: underline;
+}
+
+/* Search group */
+.search {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.search > * {
+  display: block;
+  border-radius: 4px;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+}
+
+.search > *:first-child) {
+  margin-right: -1px;
+  display: flex;
+}
+
+.search > *:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.search > *:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
