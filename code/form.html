@@ -679,13 +679,26 @@
         <h3>Text inputs</h3>
 
         <div class="example">
-          <label for="t1">Name</label>
-          <input name="name" id="t1" type="text" />
+          <label for="t0">Name</label>
+          <input name="name" id="t0" type="text" />
         </div>
 
 <pre rel="HTML" class="code"><code>
-  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"t1"</span><span class="nt">&gt;</span>I agree to the terms and conditions.<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"name"</span> <span class="na">id=</span><span class="s">"t1"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"t0"</span><span class="nt">&gt;</span>I agree to the terms and conditions.<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"name"</span> <span class="na">id=</span><span class="s">"t0"</span> <span class="nt">/&gt;</span>
+</code></pre>
+
+        <p>Where response format preference or tips may help, add a hint. Apply server side processing to handle most input concerns.</p>
+
+        <div class="example">
+          <label for="t1">Email address</label>
+          <p class="instruction" id="t1-hint">Please use your university email if available.</p>
+          <input name="name" id="t1" type="text" aria-describedby="t1-hint" />
+        </div>
+
+<pre rel="HTML" class="code"><code>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"t1"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"name"</span> <span class="na">id=</span><span class="s">"t1"</span> <span class="nt">/&gt;</span>
 </code></pre>
 
         <div class="example">
@@ -703,8 +716,10 @@
         <h5>Errors</h5>
 
         <div class="example">
-          <label for="textname">Name</label>
-          <input name="name" id="textname" type="text" aria-invalid="true" />
+          <label for="t2">Email address</label>
+          <p class="alert alert-inline alert-info" id="t2-hint">Please use your university email if available.</p>
+          <input name="name" id="t2" type="text" aria-invalid="true" aria-describedby="t2-hint" />
+          <p class="alert alert-inline alert-danger" id="t2-error">Email addresses require an @ symbol.</p>
         </div>
 
         <h5>Success</h5>
