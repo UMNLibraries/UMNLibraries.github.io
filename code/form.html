@@ -598,7 +598,7 @@
           </ol>
 
           <ol role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuetext="Step 2 of 3" aria-valuemax="3">
-            <li><a href="/step1/">Step one</span></li>
+            <li><a href="/step1/">Step one</a></li>
             <li aria-current="step"><span>Step two</span></li>
             <li><span>Step three</span></li>
           </ol>
@@ -768,6 +768,7 @@
         <p>See also <a href="/code/alert.html">alerts</a>.</p>
         <h5>Errors</h5>
         <p>Errors for each field are inserted between the label and the input field with the input field pointing to it using <code>aria-describedby</code>. If the input field is already pointing to a hint, place the error messages above the hint, and present them first in the <code>aria-described</code> attribute, i.e. <code>aria-describedby="t2-error t2-hint"</code>.</p>
+        <p>Error messages must be short and precise.</p>
 
         <div class="example">
           <label for="t2">Email address</label>
