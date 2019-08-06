@@ -379,6 +379,7 @@ ol[role="progressbar"] {
   margin: 0 0 calc(var(--m-norm) * 1rem);
   padding: 0;
   counter-reset: counter;
+  list-style: none; /* find the accessible alternative */
 }
 
 ol[role="progressbar"] li {
@@ -398,7 +399,7 @@ ol[role="progressbar"] li::before {
   text-align: center;
   font-size: 1.3rem;
   line-height: 1.3;
-  padding: 1.55rem 0;
+  padding: 0.6rem 0;
   background-color: var(--col-mes-success-dark);
 }
 
@@ -410,10 +411,6 @@ ol[role="progressbar"] li a, ol[role="progressbar"] li span {
 
 ol[role="progressbar"] li[aria-current="step"]::before {
   background-color: var(--col-mes-info-dark);
-}
-
-ol[role="progressbar"] li[aria-current="step"]::before {
-  background-color: var(--col-mes-success-bg);
 }
 
 ol[role="progressbar"] li[aria-current="step"]::after {
