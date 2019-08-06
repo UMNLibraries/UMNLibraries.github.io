@@ -370,3 +370,45 @@ select + input[type="search"] {
     background-color: transparent;
   }
 }
+
+/* Progress indicator */
+ol[role="progressbar"] {
+  display: flex;
+}
+
+ol[role="progressbar"] li {
+  margin-right: 80px;
+  margin-bottom: 40px;
+  list-style: none;
+  position: relative;
+}
+
+ol[role="progressbar"] li:not(:last-child)::after {
+  content:"";
+  display: block;
+  width: 140px;
+  border-top: 2px solid grey;
+  position: absolute;
+  top: 24%;
+  left: 40%;
+  z-index: -1;
+}
+
+ol[role="progressbar"] li::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  border: 1px solid var(--col-bg-med-dark);
+}
+
+li[aria-current="step"]::before {
+  background-color: var(--col-primary);
+  box-shadow: 0 0px 8px var(--col-primary);
+}
+
+li:not[aria-current="step"]::before {
+  background-color: grey;
+}
