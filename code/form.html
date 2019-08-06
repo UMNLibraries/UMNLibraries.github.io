@@ -376,13 +376,34 @@
   </pre>
 
         <h4>Instructions for single field</h4>
-  <pre rel="HTML" class="code" translate="no">
-  <code>
-  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"email"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"email-hint"</span><span class="nt">&gt;</span>Use official umn.edu address</span><span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"email"</span> <span class="na">name=</span><span class="s">"email"</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">pattern=</span><span class="s">".+\@umn.edu$"</span> <span class="na">aria-describedby=</span><span class="s">"email-hint"</span> <span class="nt">/&gt;</span>
-  </code>
-  </pre>
+        <div class="example">
+          <label for="email">Email address</label>
+          <p id="email-hint" class="alert alert-inline">
+            <svg class="glyph" aria-hidden="true" focusable="false" viewBox="0 0 16 16">
+              <g fill="currentColor">
+                <path d="M8,16a8,8,0,1,1,8-8A8,8,0,0,1,8,16ZM8,2a6,6,0,1,0,6,6A6,6,0,0,0,8,2Z" />
+                <path d="M8,12a1,1,0,0,1-1-1V8A1,1,0,0,1,9,8v3A1,1,0,0,1,8,12Z" />
+                <circle> cx="8" cy="5" r="1" />
+              </g>
+            </svg>
+            Use official umn.edu address
+          </p>
+          <input id="email" name="email" type="email" pattern=".+\@umn.edu$" aria-describedby="email-hint" />
+        </div>
+<pre rel="HTML" class="code" translate="no"><code>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"email"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"email-hint"</span> <span class="na">class=</span><span class="s">"alert alert-inline"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"glyph"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">viewBox=</span><span class="s">"0 0 16 16"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;g</span> <span class="na">fill=</span><span class="s">"currentColor"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M8,16a8,8,0,1,1,8-8A8,8,0,0,1,8,16ZM8,2a6,6,0,1,0,6,6A6,6,0,0,0,8,2Z"</span> <span class="nt">/&gt;</span>
+ <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M8,12a1,1,0,0,1-1-1V8A1,1,0,0,1,9,8v3A1,1,0,0,1,8,12Z"</span> <span class="nt">/&gt;</span>
+ <span class="nt">&lt;circle&gt;</span> <span class="na">cx=</span><span class="s">"8"</span> <span class="na">cy=</span><span class="s">"5"</span> <span class="na">r=</span><span class="s">"1"</span> <span class="nt">/&gt;</span>
+ <span class="nt">&lt;/g&gt;</span>
+ <span class="nt">&lt;/svg&gt;</span>
+ Use official umn.edu address</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"email"</span> <span class="na">name=</span><span class="s">"email"</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">pattern=</span><span class="s">".+\@umn.edu$"</span> <span class="na">aria-describedby=</span><span class="s">"email-hint"</span> <span class="nt">/&gt;</span>
+</code></pre>
       </article>
 
       <article id="related">
@@ -693,12 +714,22 @@
 
         <div class="example">
           <label for="t1">Email address</label>
-          <p class="instruction" id="t1-hint">Please use your university email if available.</p>
+          <p class="alert alert-inline" id="t1-hint">Please use your university email if available.</p>
           <input name="email" id="t1" type="email" aria-describedby="t1-hint" />
         </div>
 
 <pre rel="HTML" class="code" translate="no"><code>
 <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"t1"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert alert-inline"</span> <span class="na">id=</span><span class="s">"t2-hint"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"glyph"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">viewBox=</span><span class="s">"0 0 16 16"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;g</span> <span class="na">fill=</span><span class="s">"currentColor"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M8,16a8,8,0,1,1,8-8A8,8,0,0,1,8,16ZM8,2a6,6,0,1,0,6,6A6,6,0,0,0,8,2Z"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M8,12a1,1,0,0,1-1-1V8A1,1,0,0,1,9,8v3A1,1,0,0,1,8,12Z"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;circle&gt;</span> <span class="na">cx=</span><span class="s">"8"</span> <span class="na">cy=</span><span class="s">"5"</span> <span class="na">r=</span><span class="s">"1"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/g&gt;</span>
+  <span class="nt">&lt;/svg&gt;</span>
+  Please use your university email if available.
+<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">name=</span><span class="s">"email"</span> <span class="na">id=</span><span class="s">"t1"</span> <span class="nt">/&gt;</span>
 </code></pre>
 
