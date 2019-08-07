@@ -405,7 +405,7 @@ ol[role="progressbar"] li a,
 ol[role="progressbar"] li span {
   text-decoration: none;
   display: inline-block;
-  padding-left: 1rem 4rem;
+  padding: 1rem 4rem;
 }
 
 ol[role="progressbar"] li[aria-current="step"]::before {
