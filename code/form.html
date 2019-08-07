@@ -615,7 +615,8 @@
 
     <section>
       <h2>Form patterns</h2>
-      <article>
+
+      <article id="cbrb">
         <h3>Checkboxes and radio buttons</h3>
         <p>The <code>&lt;fieldset&gt;</code> surrounds the entire grouping of checkboxes or radio buttons. The <code>&lt;legend&gt;</code> provides a description for the grouping.</p>
 
@@ -717,7 +718,7 @@
 
       </article>
 
-      <article>
+      <article id="text">
         <h3>Text inputs</h3>
         <p>These patterns apply to <code>&lt;textarea&gt;</code> and <code>input</code> types <code>text</code>, <code>search</code>, <code>email</code>, <code>number</code>, <code>password</code>, <code>tel</code>, and <code>url</code>.</p>
 
@@ -848,7 +849,7 @@
 </code></pre>
       </article>
 
-      <article>
+      <article id="select">
         <h3>Select</h3>
         <p>Adapted from the Filament Group, <a href="https://www.filamentgroup.com/lab/select-css.html" aria-describedby="ext-site">styling a select like it&rsquo;s 2019</a>.</p>
         <div class="example">
@@ -877,38 +878,11 @@
 </code></pre>
      </article>
 
-     <article>
+     <article id="matrix">
        <h3>Matrix</h3>
 
        <div class="example">
-         <table role="table">
-           <thead role="rowgroup">
-            <tr role="row">
-              <td>&nbsp;</td>
-              <th scope="col" role="columnheader" id="c1">Disagree</th>
-              <th scope="col" role="columnheader" id="c2">No opinion</th>
-              <th scope="col" role="columnheader" id="c3">Agree</th>
-            </tr>
-           </thead>
-           <tbody role="rowgroup">
-            <tr role="row">
-              <th role="cell" scope="row" id="r1">Trees are awesome</th>
-              <td role="cell"><input type="radio" name="trees" aria-labelledby="r1 c1" /></td>
-              <td role="cell"><input type="radio" name="trees" aria-labelledby="r1 c2" /></td>
-              <td role="cell"><input type="radio" name="trees" aria-labelledby="r1 c3" /></td>
-             </tr>
-            <tr role="row">
-              <th role="cell" scope="row" id="r2">Water is good</th>
-              <td role="cell"><input type="radio" name="water" aria-labelledby="r2 c1" /></td>
-              <td role="cell"><input type="radio" name="water" aria-labelledby="r2 c2" /></td>
-              <td role="cell"><input type="radio" name="water" aria-labelledby="r2 c3" /></td>
-            </tr>
-          </tbody>
-        </table>
-       </div>
-
-       <div class="example">
-         <table role="presentation" id="table1">
+         <table role="presentation">
           <thead>
            <tr>
              <td>&nbsp;</td>
@@ -936,16 +910,16 @@
            <tr role="row">
                <th>Water is good</th>
              <td>
-               <input type="radio" name="water" id="r22" />
-               <label for="r22"><span>Water is good, disagree</span></label>
-             </td>
-             <td>
                <input type="radio" name="water" id="r23" />
-               <label for="r23"><span>Water is good, no opinion</span></label>
+               <label for="r23"><span>Water is good, disagree</span></label>
              </td>
              <td>
                <input type="radio" name="water" id="r24" />
-               <label for="r24"><span>Water is good, agree</span></label>
+               <label for="r24"><span>Water is good, no opinion</span></label>
+             </td>
+             <td>
+               <input type="radio" name="water" id="r25" />
+               <label for="r25"><span>Water is good, agree</span></label>
              </td>
            </tr>
            </tbody>
