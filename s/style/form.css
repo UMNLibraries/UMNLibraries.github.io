@@ -111,11 +111,15 @@ input[disabled] + label::before {
 }
 
 /* matrix */
+table[role="presentation"] [type="checkbox"] + label,
+table[role="presentation"] [type="radio"] + label {
+  position: absolute;
+}
+
 table[role="presentation"] [type="checkbox"] + label::after,
 table[role="presentation"] [type="radio"] + label::before,
 table[role="presentation"] [type="radio"] + label::after,
 table[role="presentation"] [type="radio"] + label::before {
-  top: 1rem;
   margin-left: calc(50% - 25px);
 }
 
