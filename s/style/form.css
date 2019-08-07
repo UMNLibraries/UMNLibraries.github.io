@@ -128,8 +128,8 @@ table[role="presentation"] tbody td {
   position: relative;
 }
 
-table[role="presentation"] input[type="radio"] + label > span,
-table[role="presentation"] input[type="checkbox"] + label > span {
+table[role="presentation"] input[type="radio"] + label > span:first-of-type,
+table[role="presentation"] input[type="checkbox"] + label > span:first-of-type {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -140,6 +140,30 @@ table[role="presentation"] input[type="checkbox"] + label > span {
   border: 0;
 }
 
+@media (max-width: 768px) {
+  table[role="presentation"] thead {
+    display: none;
+  }
+
+  table[role="presentation"] tbody {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  table[role="presentation"] input[type="radio"] + label > span,
+  table[role="presentation"] input[type="checkbox"] + label > span {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+}
 
 /* textareas and text inputs */
 [type="text"], [type="search"], [type="email"], [type="number"], [type="password"], [type="tel"], [type="url"], textarea {
