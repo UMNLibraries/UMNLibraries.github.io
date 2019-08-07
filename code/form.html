@@ -722,6 +722,7 @@
         <h3>Text inputs</h3>
         <p>These patterns apply to <code>&lt;textarea&gt;</code> and <code>input</code> types <code>text</code>, <code>search</code>, <code>email</code>, <code>number</code>, <code>password</code>, <code>tel</code>, and <code>url</code>.</p>
 
+        <h4>Basic text field</h4>
         <div class="example">
           <label for="t0">Name</label>
           <input name="name" id="t0" type="text" />
@@ -755,6 +756,21 @@
 <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">name=</span><span class="s">"email"</span> <span class="na">id=</span><span class="s">"t1"</span> <span class="nt">/&gt;</span>
 </code></pre>
 
+        <h4>File field</h4>
+        <div class="example">
+          <label for="f1">Reading list</label>
+          <p class="alert alert-inline" id="f1-hint">Accepted file types: PDF, DOCX</p>
+          <input name="readinglist" id="f1" type="file" aria-describedby="f1-hint" />
+        </div>
+
+
+        <h4>Number field</h4>
+        <div class="example">
+          <label for="n1">Number of copies needed</label>
+          <input name="copynum" id="n1" type="file" min="1" max="100" />
+        </div>
+
+        <h4>Textarea</h4>
         <div class="example">
           <label for="ta1">Description</label>
           <textarea id="ta1" name="description"></textarea>
