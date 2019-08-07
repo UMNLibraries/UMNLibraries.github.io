@@ -149,9 +149,12 @@ table[role="presentation"] input[type="checkbox"] + label > span {
     width: 100%;
     margin-left: 0;
   }
-}
 
-@media (max-width: 768px) {
+  table[role="presentation"] [type="checkbox"] + label,
+  table[role="presentation"] [type="radio"] + label {
+    position: relative;
+  }
+
   table[role="presentation"] input[type="radio"] + label > span:last-of-type,
   table[role="presentation"] input[type="checkbox"] + label > span:last-of-type {
     position: relative;
