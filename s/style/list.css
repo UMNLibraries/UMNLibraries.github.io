@@ -1,6 +1,14 @@
 /* list styling options */
 
-/*.list {
+article ol,
+article ul,
+article dl {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* for checklists? */
+.list {
   list-style: none;
   padding: 0;
 }
@@ -12,12 +20,9 @@
 
 .list li:hover, .list li:focus {
   background-color: var(--col-bg-medium);
-}*/
-
-ol, ul, dl {
-  margin-top: 0;
 }
 
+/* for list groups */
 .list-group {
   display: flex;
   flex-direction: column;

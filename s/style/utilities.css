@@ -70,6 +70,7 @@
 .square-md li {
   width: 15rem;
   height: 15rem;
+  background-color: var(--col-bg-light);
 }
 
 .flex-square svg.glyph {

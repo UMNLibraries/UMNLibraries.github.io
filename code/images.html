@@ -208,7 +208,7 @@
     <h1>Images</h1>
 
     <article id="optimization">
-      <h2>Photograph optimization</h2>
+      <h2>Manual photograph optimization</h2>
       <p>Use a graphic editor of choice; these steps are written specifically through Photoshop but is possible in most editors.</p>
       <ol>
         <li>Change the <acronym>DPI</acronym> to 120</li>
@@ -229,6 +229,13 @@
         <h3 class="h2">Decorative images</h3>
         <p>All images are delivered in its original format as well as WebP.</p>
 
+        <div class="example">
+          <picture aria-hidden="true">
+            <source type="image/webp" srcset="decorative.webp" />
+            <img src="decorative.jpg" alt="" />
+          </picture>
+        </div>
+
 <pre rel="HTML" class="code" translate="no">
 <code>
 <span class="nt">&lt;picture</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</nt></span>
@@ -240,8 +247,16 @@
 
         <p>Where the image is accompanying a headline, such as a news article brieflet linking to a full article, use the following pattern:</p>
 
-<pre rel="HTML" class="code" translate="no">
-<code>
+        <div class="example">
+          <a href="/article-2">
+            <picture aria-hidden="true">
+              <source type="image/webp" srcset="map.webp" />
+              <img src="map.jpg" alt="" />
+            </picture>
+            <h3>Story heading</h3>
+          </a>
+        </div>
+<pre rel="HTML" class="code" translate="no"><code>
 <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/article-2"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;picture</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;source</span> <span class="na">type=</span><span class="s">"image/webp"</span> <span class="na">srcset=</span><span class="s">"map.webp"</span> <span class="nt">/&gt;</span>
@@ -249,15 +264,22 @@
   <span class="nt">&lt;/picture&gt;</span>
   <span class="nt">&lt;h3&gt;</span>Story heading<span class="nt">&lt;/h3&gt;</span>
 <span class="nt">&lt;/a&gt;</span>
-</code>
-</pre>
+</code></pre>
       </article>
 
       <article id="informative">
         <h3 class="h2">Information images</h3>
 
-<pre rel="HTML" class="code" translate="no">
-<code>
+        <div class="example">
+          <figure role="figure">
+            <picture>
+              <source type="image/webp" srcset="map.webp" />
+              <img src="map.jpg" alt="Map" />
+            </picture>
+            <figcaption>A map of Minneapolis from 1830.</figcaption>
+          </figure>
+        </div>
+<pre rel="HTML" class="code" translate="no"><code>
 <span class="nt">&lt;figure</span> <span class="na">role=</span><span class="s">"figure"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;picture&gt;</span>
     <span class="nt">&lt;source</span> <span class="na">type=</span><span class="s">"image/webp"</span> <span class="na">srcset=</span><span class="s">"map.webp"</span> <span class="nt">/&gt;</span>
@@ -265,14 +287,12 @@
   <span class="nt">&lt;/picture&gt;</span>
   <span class="nt">&lt;figcaption&gt;</span>A map of Minneapolis from 1830.<span class="nt">&lt;/figcaption&gt;</span>
 <span class="nt">&lt;/figure&gt;</span>
-</code>
-</pre>
+</code></pre>
       </article>
 
       <article id="complex">
         <h2>Complex images</h2>
-<pre rel="HTML" class="code" translate="no">
-<code>
+<pre rel="HTML" class="code" translate="no"><code>
 <span class="nt">&lt;figure</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;picture&gt;</span>
     <span class="nt">&lt;source</span> <span class="na">type=</span><span class="s">"image/webp"</span> <span class="na">srcset=</span><span class="s">"chart.webp"</span> <span class="nt">/&gt;</span>
@@ -301,8 +321,7 @@
   <span class="nt">&lt;/table&gt;</span>
   <span class="nt">&lt;figcaption&gt;</span>Display of monthly and total visitors by affiliate type &mdash; student, faculty, staff, and community member &mdash; for the first quarter in 2014<span class="nt">&lt;/figcaption&gt;</span>
 <span class="nt">&lt;/figure&gt;</span>
-</code>
-</pre>
+</code></pre>
       </article>
     </section>
 
