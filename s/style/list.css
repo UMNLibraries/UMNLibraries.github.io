@@ -1,6 +1,6 @@
 /* list styling options */
 
-.list {
+/*.list {
   list-style: none;
   padding: 0;
 }
@@ -12,4 +12,43 @@
 
 .list li:hover, .list li:focus {
   background-color: var(--col-bg-medium);
+}*/
+
+ol, ul, dl {
+  margin-top: 0;
+}
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.list-group li {
+  position: relative;
+  display: block;
+  padding: 0.8rem 1rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid var(--col-bg-medium);
+}
+
+.list-group li:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.list-group li:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+li[aria-current] {
+  background-color: var(--col-link);
+}
+
+li[disabled] {
+  color: var(--col-bg-med-dark);
+  pointer-events: none;
 }
