@@ -53,14 +53,20 @@ ol, ul, dl {
   border-bottom: 0;
 }
 
-.list-group.list-inline {
+.list-group.list-inline li {
   border-right: 0;
   border-left: 0;
   border-radius: 0;
 }
 
+.list-group.list-links li {
+  padding: 0;
+}
+
 .list-group.list-links a {
   display: block;
+  padding: 0.8rem 1rem;
+  border-radius: 0;
 }
 
 li[aria-current] {
