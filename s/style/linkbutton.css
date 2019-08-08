@@ -19,6 +19,7 @@ a:hover, a:focus {
 
 button,
 .btn-primary {
+  font-size: 1rem;
   padding: 0.8rem 1rem;
   color: #fff;
   background-color: var(--col-primary);
@@ -47,8 +48,8 @@ button:focus {
   border: 1px solid var(--col-bg-med-dark);
 }
 
-.btn-secondary:hover,
-.btn-secondary:focus {
+.btn-exit:hover,
+.btn-exit:focus {
   color: #fff;
   background-color: var(--col-bg-med-dark);
 }
