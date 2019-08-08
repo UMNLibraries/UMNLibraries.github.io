@@ -34,7 +34,6 @@ pre[rel]::before {
 /* code example blocks */
 .example {
   border: 1px solid var(--col-bg-medium);
-  border-bottom: 0;
   padding: 1rem;
 }
 
