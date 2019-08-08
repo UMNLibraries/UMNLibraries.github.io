@@ -240,29 +240,6 @@ select[aria-disabled="true"] {
 	  linear-gradient(to bottom, var(--col-bg-medium) 0%,var(--col-bg-medium) 100%);
 }
 
-/* form buttons */
-[type='submit'], [role='button'] {
-  display: inline-block;
-  background-color: var(--col-primary);
-  color: white;
-  padding: 0.8rem 1rem;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1;
-  border: 2px solid var(--col-primary);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  font-size: 1rem;
-  min-height: 48px;
-  position: relative;
-  min-height: inherit;
-}
-
-[type="submit"]:focus, [type="submit"]:active,
-[role="button"]:focus, [role="button"]:active {
-  background-color: var(--col-primary-dark);
-  text-decoration: underline;
-}
-
 /* Search group */
 .search {
   position: relative;

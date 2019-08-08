@@ -22,13 +22,15 @@ button,
   font-size: 1rem;
   padding: 0.8rem 1rem;
   color: #fff;
+  min-height: 48px;
   background-color: var(--col-primary);
   border: 1px solid var(--col-primary-dark);
   transition: all ease 0.3s;
 }
 
 button:hover,
-button:focus {
+button:focus,
+button:active {
   background-color: var(--col-primary-dark);
 }
 
@@ -39,7 +41,8 @@ button:focus {
 }
 
 .btn-secondary:hover,
-.btn-secondary:focus {
+.btn-secondary:focus,
+.btn-secondary:active {
   background-color: var(--col-secondary-dark);
 }
 
@@ -50,7 +53,8 @@ button:focus {
 }
 
 .btn-exit:hover,
-.btn-exit:focus {
+.btn-exit:focus,
+.btn-exit:active {
   color: #fff;
   background-color: var(--col-bg-med-dark);
 }
