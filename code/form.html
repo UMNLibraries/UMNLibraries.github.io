@@ -182,21 +182,17 @@
       </ul>
       <li><a href="/code/list.html">Lists</a></li>
       <ul>
-        <li><a href="/code/list.html#order">Ordered</a></li>
+        <li><a href="/code/list.html#ordered">Ordered</a></li>
         <li><a href="/code/list.html#unordered">Unordered</a></li>
+        <li><a href="/code/list.html#definition">Definition list</a></li>
+        <li><a href="/code/list.html#listgroup">List group</a></li>
       </ul>
       <li><a href="/code/card.html">Cards</a></li>
       <li><a href="/code/form.html" aria-current="page">Forms</a></li>
       <ul>
-        <li><a href="/code/form.html#lang">Language</a></li>
-        <li><a href="/code/form.html#label">Label</a></li>
-        <li><a href="/code/form.html#hints">Placeholder hints</a></li>
-        <li><a href="/code/form.html#related">Related inputs</a></li>
-        <li><a href="/code/form.html#req">Required vs. optional</a></li>
-        <li><a href="/code/form.html#types">Input types</a></li>
-        <li><a href="/code/form.html#auto">Auto-complete and auto-suggest</a></li>
-        <li><a href="/code/form.html#date">Date</a></li>
-        <li><a href="/code/form.html#multi">Multi-page form</a></li>
+        <li><a href="/code/form.html#general">General</a></li>
+        <li><a href="/code/form.html#formelements">Form elements</a></li>
+        <li><a href="/code/form.html#formgroups">Form groups</a></li>
       </ul>
       <li><a href="/code/table.html">Tables</a></li>
       <li><a href="/code/nav.html">Navigation</a></li>
@@ -208,6 +204,7 @@
       </ul>
       <li><a href="/code/alert.html">Alerts</a></li>
       <li><a href="/code/tooltip.html">Tooltips</a></li>
+      <li><a href="/code/code.html">Code snippets</a></li>
     </ul>
   </nav>
 
@@ -215,7 +212,8 @@
   <main id="main">
     <h1>Web forms</h1>
     <p class="lead">Make forms as simple as possible and only ask what is absolutely needed to complete the task.</p>
-    <section>
+
+    <section id="general">
       <h2>General</h2>
 
       <article>
@@ -613,8 +611,8 @@
       </article>
     </section>
 
-    <section>
-      <h2>Form patterns</h2>
+    <section id="formelements">
+      <h2>Form elements</h2>
 
       <article id="cbrb">
         <h3>Checkboxes and radio buttons</h3>
@@ -943,7 +941,10 @@
        </div>
 
      </article>
+   </section>
 
+   <section id="formgroup">
+     <h2>Form groups</h2>
       <article>
         <h3>Search</h3>
         <form class="search" role="Search" aria-label="Primary search">
@@ -965,7 +966,6 @@
         <h3>Combobox</h3>
         <p>Adapted from <a href="https://dequelabs.github.io/combobo/demo/" aria-describedby="ext-site">Combobo</a>.</p>
       </article>
-
 
     </section>
 

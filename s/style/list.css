@@ -44,7 +44,7 @@ ol, ul, dl {
   border-bottom-right-radius: 4px;
 }
 
-.list-group.list-inline li:first-child {
+.list-group.list-inline:first-child li:first-child {
   border-top: 0;
 }
 
