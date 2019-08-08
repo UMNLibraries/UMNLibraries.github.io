@@ -292,6 +292,37 @@
 
       <article id="complex">
         <h2>Complex images</h2>
+
+        <div class="example">
+          <figure role="group">
+            <picture>
+              <source type="image/webp" srcset="chart.webp" />
+              <img src="chart.png" alt="2014 first quarter attendance bar chart" />
+            </picture>
+            <table role="table">
+             thead role="rowgroup">
+              <tr role="row">
+                <th scope="col" role="columnheader">Library</th>
+                <th scope="col" role="columnheader">Affiliate type</th>
+                <th scope="col" role="columnheader">Count</th>
+              </tr>
+             </thead>
+             <tbody role="rowgroup">
+              <tr role="row">
+                <td role="cell">Green Library</td>
+                <td role="cell">Faculty</td>
+                <td role="cell">1,334</td>
+              </tr>
+              <tr role="row">
+                <td role="cell">Green Library</td>
+                <td role="cell">Students</td>
+                <td role="cell">23,988</td>
+              </tr>
+             </tbody>
+            </table>
+            <figcaption>Display of monthly and total visitors by affiliate type — student, faculty, staff, and community member — for the first quarter in 2014</figcaption>
+          </figure>
+        </div>
 <pre rel="HTML" class="code" translate="no"><code>
 <span class="nt">&lt;figure</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;picture&gt;</span>
