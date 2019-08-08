@@ -16,3 +16,39 @@ a:hover, a:focus {
     content: ' \21D7';
     /*content: ' \21F1';*/
 }
+
+button,
+.btn-primary {
+  padding: 0.8rem 1rem;
+  color: #fff;
+  background-color: var(--col-primary);
+  border: 1px solid var(--col-primary-dark);
+}
+
+button:hover,
+button:focus {
+  background-color: var(--col-primary-dark);
+}
+
+.btn-secondary {
+  color: var(--col-text);
+  background-color: var(--col-secondary);
+  border: 1px solid var(--col-secondary-dark);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--col-secondary-dark);
+}
+
+.btn-exit {
+  color: var(--col-text);
+  background-color: var(--col-bg-medium);
+  border: 1px solid var(--col-bg-med-dark);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #fff;
+  background-color: var(--col-bg-med-dark);
+}

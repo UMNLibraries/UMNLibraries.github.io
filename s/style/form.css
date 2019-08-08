@@ -184,17 +184,6 @@ textarea {
   overflow: auto;
 }
 
-input[type="file"] {
-  opacity: 0;
-}
-
-input[type="file"] + label {
-  border: 1px solid var(--col-primary-dark);
-  display: inline-block;
-  padding: 0.8rem 1rem;
-  cursor: pointer;
-}
-
 /* select */
 select {
   display: block;
