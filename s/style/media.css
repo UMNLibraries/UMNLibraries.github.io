@@ -13,3 +13,8 @@ figure {
 figcaption {
   font-size: 0.9rem;
 }
+
+picture source,
+picture img {
+  filter: contrast(180%);
+}

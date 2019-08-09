@@ -206,21 +206,60 @@
   <main id="main">
 
     <h1>Images</h1>
+    <p class="lead">Review <a href="https://www.w3.org/WAI/tutorials/images/" aria-describedby="ext-site">image accessibility</a> from the Web Accessibility Initiative.</p>
 
-    <article id="optimization">
-      <h2>Manual photograph optimization</h2>
+    <section id="general">
+      <h2>General</h2>
+      <article>
+        <h3>Sizes</h3>
+
+        <p>The following standards are for non-archival web image display. Where displaying archival images, use archival best practices and tools that meet the design system principles.</p>
+        <ul>
+          <li>Less than 750px</li>
+          <li>Aspect ratio is 2.3:1</li>
+        </ul>
+      </article>
+
+    <section id="optimization">
+      <h2>Optimization</h2>
+    <article>
+      <h3>Manual photograph optimization</h3>
       <p>Use a graphic editor of choice; these steps are written specifically through Photoshop but is possible in most editors.</p>
       <ol>
-        <li>Change the <acronym>DPI</acronym> to 120</li>
-        <li>Modify width to equal the desktop-sized version of the image (no larger than 750px)</li>
-        <li>For images that aren&rsquo;t archival or where color is not critical, change to black and white</li>
-        <li>Reduce contrast (contrast filters are applied in CSS to bring contrast back)</li>
-        <li>If the image has a central focal point (portrait or building), blur the edges</li>
-        <li>Save as a <acronym>JPG</acronym> format at &ldquo;8&rdquo; high quality</li>
+        <li>Size: 750px wide maximum with 120dpi (to determine width, investigate what the largest display will be on the page)</li>
+        <ol>
+          <li>Photoshop > Image > Image Size</li>
+          <li>Resolution: 120 Pixels/Inch</li>
+          <li>Width: 750px Pixels (or less)</li>
+        </ol>
+        <li>Color: black and white unless an archival image</li>
+        <ol>
+          <li>Photoshop > Image > Adjustments > Black and white</li>
+          <li>modifying each channel may increase file size, proceed only if necessary</li>
+        </ol>
+        <li>Contrast: reduce contrast for images not intended for online download, web styles will increase it again</li>
+        <ol>
+          <li>Photoshop > Image > Adjustments > Brightness/Contrast</li>
+          <li>Reduce contrast between -25 and -50 (preferably between -40 and -50)</li>
+        </ol>
+        <li>Blur: for images with main focal points (head shots, buildings, single objects with irrelevant background)</li>
+        <ol>
+          <li>Filter > Blur Gallery > Iris Blur</li>
+          <li>Pull corner of blur zone so it&rsquo;s only slightly rounded</li>
+          <li>Set blur radius between 3px and 5px</li>
+        </ol>
+        <li>Save as: <acronym>JPG</acronym> format at &ldquo;8&rdquo; high quality</li>
+        <ol>
+          <li>Progressive load for images &ldquo;below the fold&rdquo;</li>
+        </ol>
         <li>Optimize the <acronym>JPG</acronym> file by loading it in <a href="kraken.io" aria-describedby="ext-site">Kraken</a> and saving the optimized version</li>
         <li>Save a WebP copy of the <acronym>JPG</acronym> file at <a href="https://webp-converter.com" aria-describedby="ext-site">Web Converter</a></li>
       </ol>
     </article>
+
+    <article>
+      <h3>Manual SVG optimization</h3>
+
 
     <section id="photos">
       <h2>Photography</h2>
@@ -231,8 +270,8 @@
 
         <div class="example">
           <picture aria-hidden="true">
-            <source type="image/webp" srcset="decorative.webp" />
-            <img src="decorative.jpg" alt="" />
+            <source type="image/webp" srcset="/img/decorative.webp" />
+            <img src="/img/decorative.jpg" alt="" />
           </picture>
         </div>
 
@@ -250,8 +289,8 @@
         <div class="example">
           <a href="/article-2">
             <picture aria-hidden="true">
-              <source type="image/webp" srcset="map.webp" />
-              <img src="map.jpg" alt="" />
+              <source type="image/webp" srcset="/img/map.webp" />
+              <img src="/img/map.jpg" alt="" />
             </picture>
             <h3>Story heading</h3>
           </a>
