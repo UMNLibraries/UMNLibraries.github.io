@@ -23,7 +23,7 @@ article dl {
 }
 
 /* faux check list */
-.list-check::before {
+.list-check li::before {
   content: ' ';
   display: inline-block;
   border: 1px solid var(--col-bg-med-dark);
