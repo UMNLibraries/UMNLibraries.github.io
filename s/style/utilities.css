@@ -229,3 +229,8 @@
 .b-1 {
   border: 1px solid;
 }
+
+/* margins */
+.mb-1 {
+  margin-bottom: calc( var(--m-norm) * 1rem);
+}

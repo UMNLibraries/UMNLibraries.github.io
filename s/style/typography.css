@@ -178,3 +178,9 @@ article {
 .footnote :target {
   background: var(--col-secondary-light);
 }
+
+/* highlight selection */
+::selection {
+  color: #fff;
+  background-color: var(--col-primary);
+}
