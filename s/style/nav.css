@@ -148,7 +148,7 @@ nav[aria-label="Content"] li > a {
 nav[aria-label="Content"] li > a[aria-current] {
   background-color: var(--col-link);
   color: white;
-  border-radius: 0.3rem;
+  border-radius: 0;
   text-decoration: none;
 }
 
