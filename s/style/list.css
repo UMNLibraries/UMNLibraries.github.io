@@ -83,6 +83,20 @@ article dl {
   border-radius: 0;
 }
 
+/* nested ul */
+.list-group.list-links ul {
+  padding: 0;
+}
+
+.list-group.list-links ul li {
+  border-top: 0;
+}
+
+.list-group.list-links ul li a {
+  padding: 0.1rem 0.3rem 0.1rem 2rem;
+}
+
+
 li[aria-current] {
   background-color: var(--col-link);
   color: #fff;
