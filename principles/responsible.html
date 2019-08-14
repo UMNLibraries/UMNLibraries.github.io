@@ -153,7 +153,7 @@
   </header>
 
   <nav role="navigation" aria-label="Content">
-    <ul class="list-links">
+    <ul class="list-group list-links">
       <li><a href="/principles/index.html">Overview</a></li>
       <li><a href="/principles/universal.html">Universal</a></li>
       <li><a href="/principles/accessible.html">Accessible</a></li>
@@ -201,7 +201,7 @@
       <dl>
         <dt>Findability</dt>
         <dd>The easier content is to find, the fewer pages a user has to load to locate information. This means fewer server requests are made and that unnecessary page elements &mdash; like photos and videos, which take up a lot of bandwidth &mdash; don&rsquo;t load, either. These small energy savings accumulate over time.</dd>
-        
+
         <dt>Optimize images</dt>
         <dd>Images make up the majority of total page weight. The number of image bytes has grown by more than 30% on the average web page in 2014, with little growth in image requests to match the increase. Optimizing images is the easiest big win.</dd>
         <dd>Find the right balance of file size and quality for each image, look for ways to reduce the title number of image requests, and optimize image creation workflows. Refer to <a href="/design/imagery.html">image guidelines</a> for how to optimize well.</dd>
@@ -213,7 +213,7 @@
         <dd>Remove unused styles and condense and combine styles. Reduce specificity in stylesheets to improve overriding issues as well as write more performant code.</dd>
 
         <dt>Optimize fonts</dt>
-        <dd>Use system or web native fonts to reduce requests and &ldquo;flash of unstyled content&rdquo; concerns. Where non-native fonts are selected, remove sets in the font set that will not be used (e.g. will a semi-bold italic set be used?).</dd>        
+        <dd>Use system or web native fonts to reduce requests and &ldquo;flash of unstyled content&rdquo; concerns. Where non-native fonts are selected, remove sets in the font set that will not be used (e.g. will a semi-bold italic set be used?).</dd>
 
       </dl>
     </article>
@@ -231,7 +231,7 @@
         <dt>Implement HTTP/2</dt>
         <dd>HTTP/2 allows multiple requests to run over a single connection as well as simultaneous downloads. This replaces HTTP/1&rsquo;s rule of only one outstanding request per TCP connection. Servers can push content to the browser instead of waiting for the browser to request individual page assets.</dd>
         <dd>For more practical information about HTTP/2, review Tim Frick's Designing for sustainability, pp. 218-220.</dd>
-        
+
         <dt>Utilize caching</dt>
         <dd>Cache assets aggressively where possible.</dd>
         <dd>Caching is critical for site performance; assets that are cached do not need to be requested again from the server, saving a request. All static assets such as CSS files, Javascript files, images, PDFs, and fonts should be cached.</dd>
