@@ -23,13 +23,17 @@ article dl {
 }
 
 /* faux check list */
+.list-check li {
+  padding-left: 2.5rem;
+}
 .list-check li::before {
   content: ' ';
   display: inline-block;
   border: 1px solid var(--col-bg-med-dark);
   width: 1rem;
   height: 1rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
+  margin-left: -2rem;
 }
 
 /* for list groups */
