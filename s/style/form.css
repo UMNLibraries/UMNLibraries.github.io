@@ -258,7 +258,17 @@ select[aria-disabled="true"] {
 
 .search > *:first-child) {
   margin-right: -1px;
-  display: flex;
+}
+
+.search > input[type="text"],
+.search > input[type="search"] {
+  flex: 2 0 auto;
+}
+
+.search > input[type="submit"],
+.search > button[type="submit"],
+.search > select {
+  flex: 1 0 auto;
 }
 
 .search > *:not(:first-child) {
@@ -269,10 +279,6 @@ select[aria-disabled="true"] {
 .search > *:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-}
-
-.search input[type="search"] {
-  flex-grow: 2;
 }
 
 select + input[type="search"] {

@@ -29,6 +29,7 @@ article dl {
   border: 1px solid var(--col-bg-med-dark);
   width: 1rem;
   height: 1rem;
+  margin-right: 1rem;
 }
 
 /* for list groups */
