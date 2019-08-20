@@ -39,7 +39,7 @@ caption {
   display: block;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 800px) {
 
   td:nth-of-type(odd)::before,
   td:nth-of-type(even)::before {
@@ -57,7 +57,8 @@ caption {
 
   th, td {
     display: table-cell;
-    padding: 0.5em;
+    padding: 1rem;
+    vertical-align: text-top;
   }
 
   tr {
@@ -75,16 +76,17 @@ caption {
 
 /* basic table styling */
 table {
-    border-collapse: collapse;
-    border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin-bottom: 1.3rem;
 }
-tbody tr:nth-child(odd) {
-    background-color: #f6dcd4;
-}
+
 th {
     text-align: left;
 }
 
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
 /*table {
   margin-bottom: 1.3rem;
