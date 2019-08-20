@@ -216,25 +216,30 @@
 
       <p>Example table with column and row headings.</p>
       <div class="example">
-        <table role="table">
+        <style>
+          td:nth-of-type(1) { font-weight: 800; }
+          td:nth-of-type(2)::before { content: "Author: "; }
+          td:nth-of-type(3)::before { content: "Page count: "; }
+        </style>
+        <table>
          <caption>Books Read in 2019</caption>
-         <thead role="rowgroup">
-          <tr role="row">
-            <th scope="col" role="columnheader">Title</th>
-            <th scope="col" role="columnheader">Author</th>
-            <th scope="col" role="columnheader">Page count</th>
+         <thead>
+          <tr>
+            <th scope="col" tabindex="0">Title</th>
+            <th scope="col" tabindex="0">Author</th>
+            <th scope="col" tabindex="0">Page count</th>
           </tr>
          </thead>
-         <tbody role="rowgroup">
-          <tr role="row">
-            <th role="cell" scope="row">Don Quixote</th>
-            <td role="cell">Miguel de Cervantes</td>
-            <td role="cell">1023 pages</td>
+         <tbody>
+          <tr>
+            <th scope="row" tabindex="0">Don Quixote</th>
+            <td tabindex="0">Miguel de Cervantes</td>
+            <td tabindex="0">1023 pages</td>
           </tr>
-          <tr role="row">
-            <th role="cell" scope="row">Moby Dick</th>
-            <td role="cell">Herman Melville</td>
-            <td role="cell">720 pages</td>
+          <tr>
+            <th scope="row" tabindex="0">Moby Dick</th>
+            <td tabindex="0">Herman Melville</td>
+            <td tabindex="0">720 pages</td>
           </tr>
          </tbody>
         </table>
@@ -266,25 +271,25 @@
 
       <p>Example table with column headings only.</p>
       <div class="example">
-        <table role="table">
+        <table>
          <caption>New York Times Best Sellers 5 May 2019</caption>
-         <thead role="rowgroup">
-          <tr role="row">
-            <th scope="col" role="columnheader">Rank</th>
-            <th scope="col" role="columnheader">Title</th>
-            <th scope="col" role="columnheader">Author</th>
+         <thead tabindex="0">
+          <tr>
+            <th scope="col" tabindex="0">Rank</th>
+            <th scope="col" tabindex="0">Title</th>
+            <th scope="col" tabindex="0">Author</th>
           </tr>
          </thead>
-         <tbody role="rowgroup">
-          <tr role="row">
-            <td role="cell">1st</td>
-            <td role="cell">Redemption</td>
-            <td role="cell">David Baldacci</td>
+         <tbody>
+          <tr>
+            <td tabindex="0">1<sup>st</sup></td>
+            <td tabindex="0">Redemption</td>
+            <td tabindex="0">David Baldacci</td>
           </tr>
-          <tr role="row">
-            <td role="cell">2nd</td>
-            <td role="cell">The Mister</td>
-            <td role="cell">E L James</td>
+          <tr>
+            <td tabindex="0">2<sup>nd</sup></td>
+            <td tabindex="0">The Mister</td>
+            <td tabindex="0">E L James</td>
           </tr>
          </tbody>
         </table>

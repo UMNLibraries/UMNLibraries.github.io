@@ -1,13 +1,94 @@
-@media screen and (prefers-reduced-motion: reduce) {
+/* round of applause to Chris Coyer: https://css-tricks.com/responsive-data-tables/
+and Adrian Roselli: http://adrianroselli.com/2017/11/a-responsive-accessible-table.html#Responsive
+*/
+
+
+/* Force table to not be like tables anymore */
+table, thead, tbody, th, tr {
+  display: block;
+}
+
+/* Hide table headers (but not display: none;, for accessibility -- sighted users will see labels below) */
+thead tr {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+tr {
+  border: 1px solid #ccc;
+}
+
+td {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0.5rem;
+}
+td::before {
+  font-weight: bold;
+  flex-basis: 50%;
+  margin-right: 2rem;
+}
+
+caption {
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  font-size: var(--h2);
+  padding: 0.5rem;
+  display: block;
+}
+
+@media (min-width: 950px) {
+
+  td:nth-of-type(odd)::before,
+  td:nth-of-type(even)::before {
+    content: "";
+    margin-right: 0;
+  }
+
+  thead tr {
+      position: static;
+  }
+
+  thead, tbody {
+    display: table-row-group;
+  }
+
+  th, td {
+    display: table-cell;
+    padding: 0.5em;
+  }
+
+  tr {
+    display: table-row;
+  }
+
   table {
-    position: relative; /* to negate sticky a la Scott O'Hara */
+    display: table;
+  }
+
+  caption {
+    font-size: var(--text-sm);
   }
 }
 
+/* basic table styling */
 table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+tbody tr:nth-child(odd) {
+    background-color: #f6dcd4;
+}
+th {
+    text-align: left;
+}
+
+
+/*table {
   margin-bottom: 1.3rem;
   border-collapse: collapse;
-/*   width: 100%; */
 }
 
 tbody tr {
@@ -38,7 +119,7 @@ thead th, tfoot tr {
 
 .striped tr:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.2);
-}
+}*/
 
 /* needs to apply to numerical content */
 /*th:last-child,

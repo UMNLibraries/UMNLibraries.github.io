@@ -55,6 +55,16 @@
   /* headings */
   --h1-min: 3;
   --h1-max: 5;
+
+  /* typographic variables */
+  --base-size: 1rem;
+  --type-scale: 1.33;
+  --h3: calc(var(--base-size) * var(--type-scale));
+  --h2: calc(var(--h3) * var(--type-scale));
+  --h1: calc(var(--h2) * var(--type-scale));
+  --text-sm: calc(var(--base-size) / var(--type-scale));
+  --header-margin: 0 0 1rem 2rem;
+
 }
 
 /* browser adjusts height/width values to account for border/padding added */
