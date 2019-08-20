@@ -3,9 +3,32 @@ and Adrian Roselli: http://adrianroselli.com/2017/11/a-responsive-accessible-tab
 */
 
 
-/* Force table to not be like tables anymore */
 table, thead, tbody, th, tr {
   display: block;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1.3rem;
+  border: 1px solid var(--col-bg-medium);
+}
+
+th {
+  text-align: left;
+  vertical-align: bottom;
+  font-weight: 600;
+}
+
+tbody tr {
+  border-bottom:1px solid rgba(0,0,0,0.1);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+thead th, tfoot tr {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Hide table headers (but not display: none;, for accessibility -- sighted users will see labels below) */
@@ -24,6 +47,7 @@ td {
   flex-flow: row wrap;
   padding: 0.5rem;
 }
+
 td::before {
   font-weight: bold;
   flex-basis: 50%;
@@ -41,8 +65,8 @@ caption {
 
 @media (min-width: 800px) {
 
-  td:nth-of-type(odd)::before,
-  td:nth-of-type(even)::before {
+  td:nth-of-type(n)::before,
+  td:nth-of-type(n)::after {
     content: "";
     margin-right: 0;
   }
@@ -72,20 +96,6 @@ caption {
   caption {
     font-size: var(--text-sm);
   }
-}
-
-/* basic table styling */
-table {
-  border-collapse: collapse;
-  margin-bottom: 1.3rem;
-}
-
-th {
-    text-align: left;
-}
-
-tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /*table {
@@ -129,7 +139,7 @@ td:last-child {
   text-align: right;
 }*/
 
-@media screen and (max-width: 37em) {
+/*@media screen and (max-width: 37em) {
  table, caption, thead, thead tr, thead th, tbody, tbody tr, tbody th, tbody td, th:last-child, td:last-child, tfoot {
    display: block;
    width: 100%;
@@ -177,4 +187,4 @@ td:last-child {
   margin-left: 30%;
   width: 65%;
  }
-}
+}*/
