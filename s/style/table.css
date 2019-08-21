@@ -65,8 +65,8 @@ caption {
 
 @media (min-width: 800px) {
 
-  tbody td:nth-of-type(n)::before,
-  tbody td:nth-of-type(n)::after {
+  table tbody td:nth-of-type(n)::before,
+  table tbody td:nth-of-type(n)::after {
     content: "";
     margin-right: 0;
   }
@@ -94,7 +94,7 @@ caption {
   }
 
   caption {
-    font-size: var(--text-sm);
+    display: table-caption;
   }
 }
 
