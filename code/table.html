@@ -217,9 +217,8 @@
       <p>Example table with column and row headings.</p>
       <div class="example">
         <style>
-          tbody tr *:nth-of-type(1) { font-weight: 800; }
-          tbody tr *:nth-of-type(2)::before { content: "Author: "; }
-          tbody tr *:nth-of-type(3)::before { content: "Page count: "; }
+          tbody td:nth-of-type(1)::before { content: "Author: "; }
+          tbody td:nth-of-type(2)::before { content: "Page count: "; }
         </style>
         <table>
          <caption>Books Read in 2019</caption>

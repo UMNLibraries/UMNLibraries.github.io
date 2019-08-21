@@ -65,8 +65,8 @@ caption {
 
 @media (min-width: 800px) {
 
-  tbody tr *:nth-of-type(n)::before,
-  tbody tr *:nth-of-type(n)::after {
+  tbody td:nth-of-type(n)::before,
+  tbody td:nth-of-type(n)::after {
     content: "";
     margin-right: 0;
   }
